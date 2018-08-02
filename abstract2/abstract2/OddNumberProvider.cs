@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace abstract2
 {
-    public interface INumberProvider
+    public class OddNumberProvider : INumberProvider
     {
-        int[] GetNumbers();
+        public int[] GetNumbers()
+        {
+
+            return new int[] { 1, 3, 5, 7, 9 };
+        }
     }
 }
