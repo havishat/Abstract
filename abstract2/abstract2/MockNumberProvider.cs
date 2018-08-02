@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace abstract2
 {
-    public interface INumberProvider
+    public class MockNumberProvider : INumberProvider
     {
-        int[] GetNumbers();
+        public int[] GetNumbers()
+        {
+            return new int[] { 1, 2, 3 };
+        }
     }
 }
